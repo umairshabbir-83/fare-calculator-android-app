@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fare Calculator</string>
+    <string name="Kilometers">Kilometers</string>
+    <string name="Mileage">Mileage</string>
+    <string name="Mileage_in_Kilometers">Mileage in Kilometers</string>
+    <string name="Distance_in_Kilometers">Distance in Kilometers</string>
+    <string name="Price">Petrol Price in Rupee</string>
+    <string name="calculate_fare">Calculate Fare</string>
+    <string name="Fare">Fare</string>
+    <string name="distance_in_kilometers">Distance in Kilometers</string>
+    <string name="mileage_in_kilometers">Mileage in Kilometers</string>
+    <string name="Total">Fare: %s</string>
+    <string name="petrol_price_in_rupee">Petrol Price in Rupee</string>
+</resources>

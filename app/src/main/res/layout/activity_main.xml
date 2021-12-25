@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Kilometers"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:hint="@string/distance_in_kilometers"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/Mileage"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:hint="@string/mileage_in_kilometers"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Kilometers"
+        app:layout_constraintVertical_bias="0.085"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:hint="@string/petrol_price_in_rupee"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mileage"
+        app:layout_constraintVertical_bias="0.105"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:text="@string/calculate_fare"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price"
+        app:layout_constraintVertical_bias="0.445"
+        tools:text="Calculate Fare" />
+
+    <TextView
+        android:id="@+id/Fare"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price"
+        app:layout_constraintVertical_bias="0.606"
+        tools:text="Fare: " />
+</androidx.constraintlayout.widget.ConstraintLayout>
